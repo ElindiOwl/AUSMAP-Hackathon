@@ -1,0 +1,13 @@
+:root {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html,
+body {
+  background-color: #fff;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #0a0d15;
+    color-scheme: dark;
+  }
+}
