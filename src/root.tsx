@@ -1,13 +1,13 @@
-import {isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration,} from 'react-router';
+import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, } from 'react-router';
 import React from 'react';
 
-import type {Route} from '.react-router/types/src/+types/root';
+import type { Route } from '.react-router/types/src/+types/root';
 
 import './app/ui/Normalize.scss';
 import './app/ui/App.scss';
 
 export const links: Route.LinksFunction = () => [
-	{href: 'https://fonts.googleapis.com', rel: 'preconnect'},
+	{ href: 'https://fonts.googleapis.com', rel: 'preconnect' },
 	{
 		crossOrigin: 'anonymous',
 		href: 'https://fonts.gstatic.com',
@@ -20,7 +20,7 @@ export const links: Route.LinksFunction = () => [
 ];
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
-export function Layout({children}: { children: React.ReactNode }) {
+export function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
 			<head>
@@ -44,7 +44,7 @@ export default function App() {
 }
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
-export function ErrorBoundary({error}: Route.ErrorBoundaryProps) {
+export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 	let message = 'Oops!';
 	let details = 'An unexpected error occurred.';
 	let stack: string | undefined;
@@ -61,11 +61,11 @@ export function ErrorBoundary({error}: Route.ErrorBoundaryProps) {
 	}
 
 	return (
-		<main style={{margin: '0 auto', maxWidth: '1200px', padding: '4rem 1rem 1rem'}}>
+		<main style={{ margin: '0 auto', maxWidth: '1200px', padding: '4rem 1rem 1rem' }}>
 			<h1>{message}</h1>
 			<p>{details}</p>
 			{stack && (
-				<pre style={{overflowX: 'auto', padding: '1rem', width: '100%'}}>
+				<pre style={{ overflowX: 'auto', padding: '1rem', width: '100%' }}>
 					<code>{stack}</code>
 				</pre>
 			)}

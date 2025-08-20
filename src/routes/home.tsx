@@ -1,9 +1,9 @@
-import {MainPage} from 'pages/Main-Page';
+import { MainPage } from 'pages/Main-Page';
 
 export const meta = () => {
 	return [
-		{title: 'RRF template'},
-		{content: 'Welcome to React Router!', name: 'description'},
+		{ title: 'RRF template' },
+		{ content: 'Welcome to React Router!', name: 'description' },
 	];
 };
 
