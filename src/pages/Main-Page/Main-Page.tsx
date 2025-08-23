@@ -1,13 +1,24 @@
+import style from './Main-Page.module.scss'
+
 export const MainPage = () => {
 	return (
-		<div style={{
-			alignItems: 'center',
-			display: 'flex',
-			flexDirection: 'column',
-			height: '100vh',
-			justifyContent: 'center'
-		}}>
-			<h2>This is the main page</h2>
+		<div className={style.page}>
+			<div className={style.widget__mainBlock}>
+				<div className={style.organization}>
+                    org
+				</div>
+				<div className={style.minorBlock}>
+					<div className={style.problem}>
+                        prob
+					</div>
+					<div className={style.participation}>
+                        part
+					</div>
+				</div>
+				<div className={style.news}>
+                    news
+				</div>
+			</div>
 		</div>
 	)
 }
