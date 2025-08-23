@@ -1,0 +1,41 @@
+.teamCommentsSlider {
+  margin-bottom: 1rem;
+}
+
+.slider__container {
+  gap: 6px;
+}
+
+.slider__controls {
+  width: 31px;
+  height: 61px;
+  background: transparent;
+  border: none;
+  color: #87bfc9;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.slider__controls:hover {
+  color: #4e8793;
+}
+
+.slider__controls:active {
+  color: #5d99a7;
+}
+
+.comment {
+  background: #f4fdff;
+  border: 1.5px solid #b7eaf5;
+  border-radius: 0.5rem;
+  color: #7bc2cd;
+  padding: 1.2rem 0.7rem;
+  text-align: center;
+  font-size: 1.02rem;
+  min-width: 220px;
+}
+
+.commentItem {
+  min-width: 280px;
+  width: 280px;
+}

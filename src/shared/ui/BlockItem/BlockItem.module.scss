@@ -1,0 +1,34 @@
+.blockItem {
+  flex: 1;
+  border-radius: 0.7rem;
+  padding: 1.2rem 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.cyan {
+  background: #91cfcf;
+  color: #fff;
+}
+
+.yellow {
+  background: #fde892;
+  color: #a0811e;
+}
+
+.blue {
+  background: #3783b1;
+  color: #fff;
+}
+
+.red {
+  background: #ee726e;
+  color: #fff;
+}
+
+.green {
+  background: #a8dbac;
+  color: #fff;
+}

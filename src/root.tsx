@@ -1,5 +1,6 @@
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, } from 'react-router';
 import React from 'react';
+import {StoreProvider} from './app/providers/StoreProvider';
 
 import type { Route } from '.react-router/types/src/+types/root';
 
@@ -30,7 +31,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links/>
 			</head>
 			<body>
-				{children}
+            <StoreProvider>
+                {children}
+            </StoreProvider>
 				<ScrollRestoration/>
 				<Scripts/>
 			</body>

@@ -1,0 +1,74 @@
+.commentCard {
+  background: #f4fdff;
+  border: 1.5px solid #b7eaf5;
+  border-radius: 0.5rem;
+  color: #7bc2cd;
+  padding: 1.2rem 0.7rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(123, 194, 205, 0.2);
+  }
+}
+
+.commentCard__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.commentCard__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.commentCard__authorInfo {
+  flex: 1;
+  text-align: left;
+}
+
+.commentCard__author {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: inherit;
+  line-height: 1.2;
+}
+
+.commentCard__role {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.commentCard__text {
+  font-size: 1.02rem;
+  line-height: 1.4;
+  margin: 0 0 0.75rem 0;
+  text-align: center;
+}
+
+.commentCard__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.commentCard__date {
+  font-weight: 500;
+}
+
+.commentCard__verified {
+  background: rgba(123, 194, 205, 0.2);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.7rem;
+}

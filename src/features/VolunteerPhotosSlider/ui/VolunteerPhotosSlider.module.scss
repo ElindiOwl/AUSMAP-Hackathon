@@ -1,0 +1,36 @@
+.volunteerPhotosSlider {
+  margin-bottom: 1rem;
+}
+
+.slider__container {
+  gap: 6px;
+}
+
+.slider__controls {
+  width: 31px;
+  height: 61px;
+  background: transparent;
+  border: none;
+  color: #79b8cf;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.slider__controls:hover {
+  color: #359ab7;
+}
+
+.slider__controls:active {
+  color: #236178;
+}
+
+.photo {
+  background: #deeff2;
+  color: #5ba0a9;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  font-size: 1.08rem;
+  text-align: center;
+  padding: 1.3rem 0.7rem;
+  min-width: 180px;
+}

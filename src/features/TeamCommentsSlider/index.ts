@@ -1,0 +1,1 @@
+export { default as TeamCommentsSlider } from './ui/TeamCommentsSlider';

@@ -1,0 +1,70 @@
+.problemPage {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.problemPage__problemHeader {
+  display: flex;
+  width: 100%;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.problemPage__problemLabel {
+  background: #267bb1;
+  color: white;
+  font-size: 1rem;
+  padding: 2.1rem 1.2rem;
+  border-radius: 0.8rem 0 0 0.8rem;
+  flex: 0 0 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.problemPage__resultsLabel {
+  background: #dbf3f6;
+  color: #3891AD;
+  font-size: 1.1rem;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0.8rem 0.8rem 0;
+  padding: 2.1rem 1rem;
+  font-weight: 500;
+}
+
+.problemPage__dataSetMap {
+  padding: 2rem 0.5rem;
+  background: #9dd39f;
+  border-radius: 0.8rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 1.2rem 0;
+}
+
+.problemPage__helpInfo {
+  background: #ffe28a;
+  color: #666;
+  font-size: 1.25rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  padding: 2rem 1rem;
+  margin: 1.2rem 0;
+}
+
+.problemPage__topics {
+  background: #b5e0e2;
+  color: #317583;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.8rem;
+  padding: 2rem 1rem;
+  margin-top: 1.2rem;
+}

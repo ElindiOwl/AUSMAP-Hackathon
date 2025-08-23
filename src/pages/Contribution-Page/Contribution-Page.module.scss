@@ -1,0 +1,80 @@
+.contributionPage {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contributionPage__titleBlock {
+  text-align: center;
+  background: #deeff2;
+  color: #7bc2cd;
+  border-radius: 0.7rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding: 2rem 1rem 2.2rem 1rem;
+  margin: 1.3rem 0 1.4rem 0;
+  line-height: 1.2;
+}
+
+.contributionPage__optionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.contributionPage__volunteer {
+  background: #7cc9c6;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85px;
+  text-decoration: none;
+}
+
+.contributionPage__samples {
+  background: #3482b5;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85px;
+  text-decoration: none;
+}
+
+.contributionPage__donor {
+  background: #ee726e;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85px;
+  text-decoration: none;
+}
+
+.contributionPage__influencer {
+  background: #a8dbac;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85px;
+  text-decoration: none;
+}

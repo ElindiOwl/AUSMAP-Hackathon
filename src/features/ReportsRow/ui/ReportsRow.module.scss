@@ -1,0 +1,30 @@
+.reportsRow {
+  margin-bottom: 1rem;
+}
+
+.reportsSlider__container {
+  gap: 6px;
+}
+
+.reportsSlider__controls {
+  width: 31px;
+  height: 61px;
+  background: transparent;
+  border: none;
+  color: #ee726e;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.reportsSlider__controls:hover {
+  color: #d12b26;
+}
+
+.reportsSlider__controls:active {
+  color: #d1564f;
+}
+
+.reportItem {
+  min-width: 220px;
+  width: 220px;
+}

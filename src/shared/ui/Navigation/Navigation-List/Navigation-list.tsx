@@ -1,13 +1,13 @@
 import type { FC, ReactNode } from 'react';
 import React, { memo } from 'react';
 
-export type NavigationItem = {
+export type NavigationListItem = {
     listItem: ReactNode;
     position?: number;
 }
 
 interface NavigationListProps {
-    navList: NavigationItem[];
+    navList: NavigationListItem[];
 }
 
 export const NavigationList: FC<NavigationListProps> = memo(({ navList }) => {

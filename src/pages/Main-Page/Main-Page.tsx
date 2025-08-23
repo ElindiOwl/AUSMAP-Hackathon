@@ -1,24 +1,24 @@
-import style from './Main-Page.module.scss'
+import { NewsList } from 'features/NewsList';
+import { NewsletterForm } from 'widgets/NewsletterForm';
+import { SectionBlock } from 'shared/ui/SectionBlock/SectionBlock';
+import { Link } from 'react-router';
+
+import style from './Main-Page.module.scss';
 
 export const MainPage = () => {
 	return (
-		<div className={style.page}>
-			<div className={style.widget__mainBlock}>
-				<div className={style.organization}>
-                    org
-				</div>
-				<div className={style.minorBlock}>
-					<div className={style.problem}>
-                        prob
-					</div>
-					<div className={style.participation}>
-                        part
-					</div>
-				</div>
-				<div className={style.news}>
-                    news
-				</div>
+		<div className={style.mainPage}>
+			<SectionBlock className={style.mainPage__aboutBlock}>
+				<Link className={style.mainPage__orgLink} to="/about">About Organization</Link>
+			</SectionBlock>
+			<div className={style.mainPage__minorBlock}>
+				<Link className={style.mainPage__problem} to="/problem">About problem</Link>
+				<Link className={style.mainPage__contribution} to="/contribution">About contribution</Link>
 			</div>
+			<NewsList/>
+			<NewsletterForm/>
 		</div>
 	)
 }
+
+export default MainPage;

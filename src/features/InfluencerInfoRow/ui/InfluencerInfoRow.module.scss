@@ -1,0 +1,66 @@
+.infoRowSlider {
+  margin-bottom: 1.1rem;
+}
+
+.slider__container {
+  gap: 12px;
+}
+
+.slider__controls {
+  width: 31px;
+  height: 61px;
+  background: transparent;
+  border: none;
+  color: #a7dbaf;
+  cursor: pointer;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__controls:hover {
+  color: #68a072;
+}
+
+.slider__controls:active {
+  color: #41804d;
+}
+
+.slideItem {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #a7dbaf;
+  border-radius: 0.7rem;
+  padding: 1.1rem 1.2rem;
+  min-width: 380px;
+  box-sizing: border-box;
+  gap: 23px;
+}
+
+.photo {
+  background: #a7dbaf;
+  color: #fff;
+  border-radius: 0.3rem;
+  width: 80px;
+  height: 80px;
+  font-size: 1.04rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  color: #6d996a;
+  font-size: 1.09rem;
+  flex: 1 1 0;
+  font-weight: 500;
+}
+
+.influencerItem {
+  min-width: 280px;
+  max-width: 320px;
+  margin: 0 8px;
+}

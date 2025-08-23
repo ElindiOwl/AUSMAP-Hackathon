@@ -1,0 +1,30 @@
+.newsList {
+  margin-bottom: 1rem;
+}
+
+.newsSlider__container {
+  gap: 6px;
+}
+
+.newsSlider__controls {
+  width: 31px;
+  height: 61px;
+  background: transparent;
+  border: none;
+  color: #2d8ba1;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.newsSlider__controls:hover {
+  color: #277093;
+}
+
+.newsSlider__controls:active {
+  color: #185e7b;
+}
+
+.newsItem {
+  min-width: 250px;
+  width: 250px;
+}
