@@ -30,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Meta/>
 				<Links/><title>AUSMAP Hackathon</title>
 			</head>
-			<body>
+			<body suppressHydrationWarning={true}>
 				<StoreProvider>
 					{children}
 				</StoreProvider>
