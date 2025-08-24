@@ -1,9 +1,9 @@
 import type { FormEvent } from 'react';
 import { FormItem, Heading, RegularButton, Text, useValidator } from 'shared/ui';
 
-import style from './NewsBlock.module.scss';
+import style from './NewsletterSignup.module.scss';
 
-export const NewsBlock = () => {
+export const NewsletterSignup = () => {
 	const firstNameValidator = useValidator({
 		initialValue: '',
 		rules: { required: true }
@@ -42,20 +42,20 @@ export const NewsBlock = () => {
 	};
 
 	return (
-		<section className={style.newsBlock}>
-			<div className={style.newsBlock__content}>
-				<Heading className={style.newsBlock__title} level="h2">
+		<section className={style.newsletterSignup}>
+			<div className={style.newsletterSignup__content}>
+				<Heading className={style.newsletterSignup__title} level="h2">
                     JOIN OUR NEWSLETTER!
 				</Heading>
-				<Text className={style.newsBlock__description}>
+				<Text className={style.newsletterSignup__description}>
                     Be the first to hear about training days, the latest results from our data, research in
                     microplastics, and much more!
 				</Text>
 			</div>
-			<form className={style.newsBlock__form} onSubmit={handleSubmit}>
+			<form className={style.newsletterSignup__form} onSubmit={handleSubmit}>
 				<FormItem
-					errorStyle={style.newsBlock__error}
-					inputStyle={style.newsBlock__input}
+					errorStyle={style.newsletterSignup__error}
+					inputStyle={style.newsletterSignup__input}
 					name="firstName"
 					placeholder="First Name"
 					properties={{
@@ -67,8 +67,8 @@ export const NewsBlock = () => {
 					onChange={firstNameValidator.onChange}
 				/>
 				<FormItem
-					errorStyle={style.newsBlock__error}
-					inputStyle={style.newsBlock__input}
+					errorStyle={style.newsletterSignup__error}
+					inputStyle={style.newsletterSignup__input}
 					name="lastName"
 					placeholder="Last Name"
 					properties={{
@@ -80,8 +80,8 @@ export const NewsBlock = () => {
 					onChange={lastNameValidator.onChange}
 				/>
 				<FormItem
-					errorStyle={style.newsBlock__error}
-					inputStyle={style.newsBlock__input}
+					errorStyle={style.newsletterSignup__error}
+					inputStyle={style.newsletterSignup__input}
 					name="email"
 					placeholder="Email"
 					properties={{

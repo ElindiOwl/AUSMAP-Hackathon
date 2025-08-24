@@ -1,0 +1,58 @@
+.projectLeadersSection {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: var(--spacing-16);
+  border-radius: var(--radius-lg);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: linear-gradient(to bottom, var(--color-forest), var(--color-forest-dark));
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-alternative-dark);
+    opacity: 0.5;
+    z-index: 1;
+    border-radius: inherit;
+  }
+
+  &__header {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+  }
+
+  &__title {
+    // Add styles from about page here
+  }
+
+  &__subtitle {
+    // Add styles from about page here
+  }
+
+  &__content {
+    // Add styles from about page here
+  }
+
+  &__text {
+    // Add styles from about page here
+  }
+
+  &__logo {
+    // Add styles from about page here
+  }
+}

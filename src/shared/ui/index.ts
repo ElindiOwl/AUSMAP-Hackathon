@@ -1,5 +1,7 @@
+export * from './BackgroundSection';
 export * from './BlockItem/BlockItem';
 export * from './Buttons/Regular-Button';
+export * from './DetailCard';
 export * from './Dropdown-Menu';
 export * from './Form';
 export * from './Navigation';

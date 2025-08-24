@@ -1,0 +1,22 @@
+.detailSections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--spacing-4);
+  max-width: 1200px;
+  margin: 0 var(--spacing-4) 0 var(--spacing-4);
+}
+
+@media (max-width: 1024px) {
+  .detailSections {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .detailSections {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}

@@ -1,5 +1,11 @@
 export { default as turtle } from './turtle.avif';
 export { default as michelleBlewitt } from './michelle-blewitt.avif';
 export { default as water } from './water.avif';
-export { default as sandInHand } from './sandInHand.avif';
 export { default as water2 } from './water2.avif';
+export { default as sandInHand } from './sandInHand.avif';
+export { default as beach } from './beach.avif';
+export { default as forest } from './forest.avif';
+export { default as peopleWalk } from './peopleWalk.avif';
+export { default as peopleCheck } from './peopleCheck.avif';
+export { default as peopleTalk } from './peopleTalk.avif';
+export { default as TIS } from './TIS.avif'; 
