@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from 'shared/lib';
-import { RegularButton, Slider } from 'shared/ui';
+import { Heading, RegularButton, Slider } from 'shared/ui';
 import { ArrowSVG } from 'shared/assets';
 import type { News } from 'entities/news';
 import { NewsCard, selectLatestNews, setNews } from 'entities/news';
 
-import styles from './NewsList.module.scss';
+import style from './NewsList.module.scss';
 
 const mockNewsData = [
 	{
@@ -58,16 +58,21 @@ export const NewsList = () => {
 	}, [dispatch]);
 
 	return (
-		<section className={styles.newsList}>
+		<section className={style.newsList}>
+			<div className={style.newsList__header}>
+				<Heading className={style.newsList__title} level="h2">
+                    READ THE LATEST NEWS!
+				</Heading>
+			</div>
 			<Slider
 				button={
-					<RegularButton buttonStyle={styles.newsSlider__controls}>
+					<RegularButton buttonStyle={style.newsSlider__controls}>
 						<ArrowSVG/>
 					</RegularButton>
 				}
 				buttonsPosition="middle"
-				containerStyle={styles.newsSlider__container}
-				sliderStyle={styles.newsSlider__slider}
+				containerStyle={style.newsSlider__container}
+				sliderStyle={style.newsSlider__slider}
 			>
 				{latestNews.map((news: News) => (
 					<NewsCard

@@ -2,7 +2,7 @@ import { NewsList } from 'features/NewsList';
 import { NewsBlock } from 'widgets/NewsBlock';
 import { Heading, RegularButton, SectionBlock, Text } from 'shared/ui';
 import { Link } from 'react-router';
-import { michelleBlewitt, turtle } from 'shared/assets';
+import { michelleBlewitt, sandInHand, turtle, water, water2 } from 'shared/assets';
 
 import style from './Main-Page.module.scss';
 
@@ -41,9 +41,9 @@ export default function MainPage() {
                                     researchers – welcome to AUSMAP!"
 								</Text>
 
-								<Link className={style.mainPage__lernMoreLink} to="/about">
+								<Link to="/about">
 									<RegularButton
-										buttonStyle={style.mainPage__lernMoreButton}
+										buttonStyle={style.mainPage__learnAboutButton}
 										type="button"
 									>
                                         LET'S GET ACQUAINTED!
@@ -73,10 +73,47 @@ export default function MainPage() {
 				</div>
 			</SectionBlock>
 			<div className={style.mainPage__minorBlock}>
-				<Link className={style.mainPage__problem} to="/problem">About problem</Link>
-				<Link className={style.mainPage__contribution} to="/contribution">About contribution</Link>
+				<SectionBlock className={style.mainPage__problemBlock} style={{ backgroundImage: `url(${sandInHand})` }}>
+					<Heading className={style.mainPage__title} level="h2">
+                        the plastic problem
+					</Heading>
+					<Text className={style.mainPage__problemText}>
+						<span>Until recently microplastic pollution presented scientists with a crisis that was invisible to
+						the human eye. If no one could see the scale of the problem, how could we convince communities
+						and government to engage with the biggest threat to ocean wildlife, and the human food chain,
+						that has emerged in our lifetime?</span><br/>
+						<span>Using the data collected by our network of citizen scientists and researchers, AUSMAP is
+						creating vivid maps of microplastic pollution hotspots around Australia. Our
+						work will enable communities and government to implement behaviour change, regulate industry,
+						and develop better waste management systems.</span><br/>
+						<span>Solutions come fast when you can actually see the problem!</span>
+					</Text>
+					<Link to="/problem">
+						<RegularButton
+							buttonStyle={style.mainPage__learnProblemButton}
+							type="button"
+						>
+                            SEE FOR YOURSELF!
+						</RegularButton></Link>
+				</SectionBlock>
+				<SectionBlock className={style.mainPage__contributionBlock} style={{ backgroundImage: `url(${water})` }}>
+					<Heading className={style.mainPage__title} level="h2">
+                        you can make a difference!
+					</Heading>
+					<Text className={style.mainPage__contributionText}>
+                        Join our sample teams, train as an educator, help us build the network that will save our
+                        aquatic ecosystems from microplastic pollution or donate!
+					</Text>
+					<Link to="/contribution">
+						<RegularButton
+							buttonStyle={style.mainPage__learnContributionButton}
+							type="button"
+						>
+                            JOIN US!
+						</RegularButton></Link>
+				</SectionBlock>
 			</div>
-			<div className={style.mainPage__newsletterBlock}>
+			<div className={style.mainPage__newsletterBlock} style={{ backgroundImage: `url(${water2})` }}>
 				<NewsList/>
 				<NewsBlock/>
 			</div>
