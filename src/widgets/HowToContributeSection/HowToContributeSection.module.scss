@@ -37,6 +37,11 @@
   text-shadow: none;
 }
 
+.howToContribute__altDarkHighlight {
+  color: var(--color-alternative-dark-light);
+  text-shadow: none;
+}
+
 .howToContribute__waysGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -49,13 +54,28 @@
   justify-content: flex-start;
   height: 25vh;
   gap: var(--spacing-3);
-  background: var(--color-primary);
   opacity: 0.8;
   border-radius: var(--radius-lg);
   padding: var(--spacing-6);
   color: var(--color-white);
   text-decoration: none;
   transition: var(--transition-fast);
+}
+
+.howToContribute__wayCard_volunteer {
+  background: var(--color-primary);
+}
+
+.howToContribute__wayCard_research {
+  background: var(--color-primary-dark);
+}
+
+.howToContribute__wayCard_donor {
+  background: var(--color-alternative);
+}
+
+.howToContribute__wayCard_influencer {
+  background: var(--color-alternative-dark-light);
 }
 
 .howToContribute__wayCard:hover {

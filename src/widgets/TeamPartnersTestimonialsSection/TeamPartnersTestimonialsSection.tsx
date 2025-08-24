@@ -1,5 +1,5 @@
-import {BackgroundSection, Heading} from 'shared/ui';
-import {beach, waterbubbles, waterstains} from 'shared/assets';
+import { BackgroundSection, Heading } from 'shared/ui';
+import { beach, waterbubbles, waterstains } from 'shared/assets';
 
 import styles from './TeamPartnersTestimonialsSection.module.scss';
 
@@ -13,7 +13,7 @@ export const TeamPartnersTestimonialsSection = () => {
 				overlayClassName={styles.teamPartnersTestimonials__overlay}
 			>
 				<Heading className={styles.teamPartnersTestimonials__cardTitle} level="h3">
-					AUSMAP team
+                    AUSMAP team
 				</Heading>
 			</BackgroundSection>
 
@@ -24,7 +24,7 @@ export const TeamPartnersTestimonialsSection = () => {
 				overlayClassName={styles.teamPartnersTestimonials__overlay}
 			>
 				<Heading className={styles.teamPartnersTestimonials__cardTitle} level="h3">
-					Partners & collaborators
+                    Partners & collaborators
 				</Heading>
 			</BackgroundSection>
 
@@ -35,7 +35,7 @@ export const TeamPartnersTestimonialsSection = () => {
 				overlayClassName={styles.teamPartnersTestimonials__overlay}
 			>
 				<Heading className={styles.teamPartnersTestimonials__cardTitle} level="h3">
-					Testimonials
+                    Testimonials
 				</Heading>
 			</BackgroundSection>
 		</section>

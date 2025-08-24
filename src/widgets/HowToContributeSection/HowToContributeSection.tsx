@@ -13,13 +13,15 @@ export const HowToContributeSection = () => {
 			overlayClassName={style.howToContribute__overlay}
 		>
 			<Heading className={style.howToContribute__title} level="h2">
-                How can <span className={style.howToContribute__darkHighlight}>YOU</span> join the <span
+				<span className={style.howToContribute__darkHighlight}>How</span> can <span
+					className={style.howToContribute__altHighlight}>YOU</span> join the <span
 					className={style.howToContribute__highlight}>FIGHT</span> against
-				<span className={style.howToContribute__altHighlight}> MICROPLASTICS</span>?
+				<span className={style.howToContribute__altDarkHighlight}> MICROPLASTICS</span>?
 			</Heading>
 
 			<div className={style.howToContribute__waysGrid}>
-				<Link className={style.howToContribute__wayCard} to="/volunteering">
+				<Link className={`${style.howToContribute__wayCard} ${style.howToContribute__wayCard_volunteer}`}
+					  to="/volunteering">
 					<Heading className={style.howToContribute__wayTitle} level="h3">Become a volunteer</Heading>
 					<Text className={style.howToContribute__wayText}>
                         Help process and sort microplastic samples, add results to the national database, and map
@@ -27,7 +29,8 @@ export const HowToContributeSection = () => {
 					</Text>
 				</Link>
 
-				<Link className={style.howToContribute__wayCard} to="/research">
+				<Link className={`${style.howToContribute__wayCard} ${style.howToContribute__wayCard_research}`}
+					  to="/research">
 					<Heading className={style.howToContribute__wayTitle} level="h3">Provide samples / research</Heading>
 					<Text className={style.howToContribute__wayText}>
                         Collect shoreline samples using AUSMAP methods, contribute data, or collaborate with
@@ -35,7 +38,8 @@ export const HowToContributeSection = () => {
 					</Text>
 				</Link>
 
-				<Link className={style.howToContribute__wayCard} to="/donating">
+				<Link className={`${style.howToContribute__wayCard} ${style.howToContribute__wayCard_donor}`}
+					  to="/donating">
 					<Heading className={style.howToContribute__wayTitle} level="h3">Become a donor</Heading>
 					<Text className={style.howToContribute__wayText}>
                         Fund nationwide citizen science, training, and data mapping to drive solutions where they are
@@ -43,7 +47,8 @@ export const HowToContributeSection = () => {
 					</Text>
 				</Link>
 
-				<Link className={style.howToContribute__wayCard} to="/influencing">
+				<Link className={`${style.howToContribute__wayCard} ${style.howToContribute__wayCard_influencer}`}
+					  to="/influencing">
 					<Heading className={style.howToContribute__wayTitle} level="h3">Become an influencer</Heading>
 					<Text className={style.howToContribute__wayText}>
                         Raise awareness with councils, schools, and communities. Share hotspot maps to influence
