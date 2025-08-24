@@ -1,6 +1,6 @@
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, } from 'react-router';
 import React from 'react';
-import {StoreProvider} from './app/providers/StoreProvider';
+import { StoreProvider } from 'app/providers';
 
 import type { Route } from '.react-router/types/src/+types/root';
 
@@ -28,12 +28,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<meta charSet="utf-8"/>
 				<meta content="width=device-width, initial-scale=1" name="viewport"/>
 				<Meta/>
-				<Links/>
+				<Links/><title>AUSMAP Hackathon</title>
 			</head>
 			<body>
-            <StoreProvider>
-                {children}
-            </StoreProvider>
+				<StoreProvider>
+					{children}
+				</StoreProvider>
 				<ScrollRestoration/>
 				<Scripts/>
 			</body>

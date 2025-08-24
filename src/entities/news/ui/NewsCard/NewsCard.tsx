@@ -1,5 +1,3 @@
-import React from 'react';
-
 import type { News } from '../../model/types';
 
 import styles from './NewsCard.module.scss';

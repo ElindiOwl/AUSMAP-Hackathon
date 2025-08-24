@@ -1,11 +1,11 @@
 'use client';
 
-import type { FC } from 'react';
-import React, { useEffect, useState } from 'react';
+import type { FC, ReactNode } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 interface PortalProps {
-    children: React.ReactNode;
+    children: ReactNode;
     portal: HTMLElement | DocumentFragment | string;
 }
 

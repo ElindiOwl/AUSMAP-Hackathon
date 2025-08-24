@@ -1,17 +1,17 @@
-import type { FC } from 'react';
-import React, { memo, useRef } from 'react';
+import type { FC, ReactNode, RefObject } from 'react';
+import { memo, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { Portal } from './Portal';
 
 interface DropdownContentProps {
-    children: React.ReactNode;
+    children: ReactNode;
     containerStyling: string;
 }
 
 interface DropdownShellProps extends DropdownContentProps {
     portalElement: HTMLElement | string;
-    toggleRef: React.RefObject<HTMLDivElement>;
+    toggleRef: RefObject<HTMLDivElement>;
     isMenuOpen: boolean;
     animationClasses: {
         enter: string;

@@ -1,95 +1,99 @@
 .aboutPage {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: var(--max-width-md);
+  margin: var(--spacing-0) auto;
 }
 
 // General stacked blocks
 .aboutPage > * {
-  margin-top: 1.3rem;
+  margin-top: var(--spacing-5);
 }
 
 .aboutPage__aboutBlock {
-  padding: 2rem;
-  background: #cef2f2;
-  border-radius: 1rem;
-  font-size: 1.5rem;
+  padding: var(--spacing-8);
+  background: var(--color-primary-light);
+  border-radius: var(--radius-xl);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
 }
 
 .aboutPage__visionMissionBlock {
   display: flex;
-  gap: 1.5rem;
+  gap: var(--spacing-6);
 }
 
 .aboutPage__card {
-  background: #d2f4f2;
+  background: var(--color-primary-light);
   flex: 1 1 200px;
-  padding: 2rem 1rem;
-  border-radius: 0.7rem;
+  padding: var(--spacing-8) var(--spacing-4);
+  border-radius: var(--radius-lg);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
 }
 
 .aboutPage__leadersGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
-  margin-top: 1.2rem;
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-5);
 }
 
 .aboutPage__leader {
-  background: #8fd1d3;
-  color: #fff;
-  border-radius: 0.6rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
   text-align: center;
-  font-size: 1.08rem;
-  padding: 1.4rem 0.5rem;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  padding: var(--spacing-6) var(--spacing-2);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .aboutPage__goalsGrid {
-  background: #ef7977;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.5rem;
+  background: var(--color-alternative);
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-2xl);
   text-align: center;
-  border-radius: 0.8rem;
-  margin: 1.8rem 0 .6rem 0;
-  padding: 1.2rem 0.5rem;
+  border-radius: var(--radius-xl);
+  margin: var(--spacing-8) var(--spacing-0) var(--spacing-2) var(--spacing-0);
+  padding: var(--spacing-5) var(--spacing-2);
   letter-spacing: 1px;
 }
 
 .aboutPage__goalsGrid .aboutPage__you {
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   font-size: 1.2em;
 }
 
 .aboutPage__partnersTestimonialsBlock {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-6);
 }
 
 .aboutPage__tile {
-  background: #3883ad;
-  color: #fff;
-  font-size: 1.12rem;
-  border-radius: 0.6rem;
-  padding: 1.6rem 0.5rem;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-6) var(--spacing-2);
   text-align: center;
 }
 
 .aboutPage__sectionBar {
-  background: #a6cca7;
-  border-radius: 0.7rem;
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: bold;
+  background: var(--color-alternative-dark);
+  border-radius: var(--radius-lg);
+  color: var(--color-white);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
   text-align: center;
-  padding: 1.1rem 0.4rem 1rem 0.4rem;
-  margin-top: 2.2rem;
+  padding: var(--spacing-5) var(--spacing-1) var(--spacing-4) var(--spacing-1);
+  margin-top: var(--spacing-10);
 }

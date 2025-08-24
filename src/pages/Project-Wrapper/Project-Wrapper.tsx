@@ -3,7 +3,8 @@ import { Footer } from 'widgets/Footer';
 import { Header } from 'widgets/Header';
 import { Wrapper } from 'shared/ui';
 
-const ProjectWrapper = () => {
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export default function ProjectWrapper() {
 
 	return (
 		<Wrapper
@@ -13,5 +14,3 @@ const ProjectWrapper = () => {
 		/>
 	);
 };
-
-export default ProjectWrapper;

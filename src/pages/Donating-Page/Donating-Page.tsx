@@ -1,12 +1,14 @@
-import { SectionBlock } from 'shared/ui/SectionBlock/SectionBlock';
+import { SectionBlock } from 'shared/ui';
 
 import style from './Donating-Page.module.scss';
 
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export async function loader() {
 	return {};
 }
 
-export const DonatingPage = () => {
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export default function DonatingPage() {
 	return (
 		<div className={style.donatingPage}>
 			<div className={style.donatingPage__headerGrid}>
@@ -35,5 +37,3 @@ export const DonatingPage = () => {
 		</div>
 	);
 }
-
-export default DonatingPage;

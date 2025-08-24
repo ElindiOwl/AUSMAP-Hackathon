@@ -1,13 +1,15 @@
 import { ReportsRow } from 'features/ReportsRow';
-import { SectionBlock } from 'shared/ui/SectionBlock/SectionBlock';
+import { SectionBlock } from 'shared/ui';
 
 import styles from './Problem-Page.module.scss';
 
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export async function loader() {
 	return {};
 }
 
-export const ProblemPage = () => {
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export default function ProblemPage() {
 	return (
 		<div className={styles.problemPage}>
 			<div className={styles.problemPage__problemHeader}>
@@ -26,6 +28,4 @@ export const ProblemPage = () => {
 			</SectionBlock>
 		</div>
 	);
-};
-
-export default ProblemPage;
+}

@@ -1,13 +1,15 @@
 import { InfluencerInfoRow } from 'features/InfluencerInfoRow';
-import { SectionBlock } from 'shared/ui/SectionBlock/SectionBlock';
+import { SectionBlock } from 'shared/ui';
 
 import style from './Influencing-Page.module.scss';
 
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export async function loader() {
 	return {};
 }
 
-export const InfluencingPage = () => {
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export default function InfluencingPage() {
 	return (
 		<div className={style.influencingPage}>
 			<SectionBlock className={style.influencingPage__titleBlock}>
@@ -27,6 +29,4 @@ export const InfluencingPage = () => {
 			</div>
 		</div>
 	);
-};
-
-export default InfluencingPage;
+}

@@ -1,5 +1,114 @@
+html {
+  font-size: 1px;
+
+  @media (min-width: 1400px) {
+    font-size: 1px;
+  }
+}
+
 :root {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-family-text: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  font-family: var(--font-family-text);
+  background-color: var(--color-white);
+  z-index: var(--index-base);
+
+  // z-indexes
+  --index-special: -1;
+  --index-base: -2;
+  --index-overlaying: 1;
+  --index-standard: 2;
+  --index-header: 3;
+
+  // font-properties
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+
+  --font-line-height-tight: 1;
+  --font-line-height-snug: 1.2;
+  --font-line-height-normal: 1.5;
+
+  --font-text-xs: normal normal var(--font-weight-medium) var(--font-size-xs)/var(--font-line-height-normal) var(--font-family-text);
+  --font-text-sm: normal normal var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-normal) var(--font-family-text);
+  --font-text-base: normal normal var(--font-weight-medium) var(--font-size-base)/var(--font-line-height-normal) var(--font-family-text);
+  --font-text-lg: normal normal var(--font-weight-semibold) var(--font-size-lg)/var(--font-line-height-snug) var(--font-family-text);
+  --font-text-xl: normal normal var(--font-weight-semibold) var(--font-size-xl)/var(--font-line-height-snug) var(--font-family-text);
+  --font-text-2xl: normal normal var(--font-weight-semibold) var(--font-size-2xl)/var(--font-line-height-snug) var(--font-family-text);
+  --font-text-3xl: normal normal var(--font-weight-semibold) var(--font-size-3xl)/var(--font-line-height-snug) var(--font-family-text);
+  --font-text-4xl: normal normal var(--font-weight-semibold) var(--font-size-4xl)/var(--font-line-height-snug) var(--font-family-text);
+
+  // colors
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray: #eee;
+
+  --color-primary: #6ac9c8;
+  --color-primary-light: #badce6;
+  --color-primary-dark: #027fb4;
+
+  --color-alternative: #ff6161;
+  --color-alternative-dark: #93c47d;
+  --color-alternative-light: #ffd966;
+
+  // spacing
+  --spacing-0: 0;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+
+  // border-radius
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 50%;
+
+  // shadows
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  // borders
+  --border-thin: 1px solid;
+  --border-thick: 2px solid;
+  --border-white: var(--border-thick) var(--color-white);
+  --border-primary-dark: var(--border-thick) var(--color-primary-dark);
+  --border-alternative-dark: var(--border-thick) var(--color-alternative-dark);
+
+  // transitions
+  --transition-fast: all 0.2s ease;
+  --transition-normal: all 0.3s ease;
+
+  // layout
+  --max-width-sm: 500px;
+  --max-width-md: 600px;
+  --max-width-content: 380px;
+
+  --min-height-sm: 58px;
+  --min-height-md: 60px;
+  --min-height-lg: 80px;
+  --min-height-xl: 85px;
+
+  // component sizes
+  --size-avatar: 80px;
+  --size-badge: 24px;
 }
 
 html,

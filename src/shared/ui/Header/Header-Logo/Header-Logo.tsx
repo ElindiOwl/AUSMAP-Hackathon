@@ -1,13 +1,14 @@
 import { Link } from 'react-router';
 import { cn } from 'shared/lib';
-import React, { type FC, memo } from 'react';
+import type { FC, ReactNode } from 'react';
+import { memo } from 'react';
 
 interface HeaderLogoStyles {
     linkStyle?: string
 }
 
 interface HeaderLogoProps extends HeaderLogoStyles {
-    children: React.ReactNode,
+    children: ReactNode,
     link?: string,
 }
 

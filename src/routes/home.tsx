@@ -1,18 +1,18 @@
-import { MainPage } from 'pages/Main-Page';
+import MainPage from "pages/Main-Page/Main-Page";
 
 export const meta = () => {
-	return [
-		{ title: 'RRF template' },
-		{ content: 'Welcome to React Router!', name: 'description' },
-	];
+    return [
+        {title: 'RRF template'},
+        {content: 'Welcome to React Router!', name: 'description'},
+    ];
 };
 
 const Home = () => {
-	return (
-		<>
-			<MainPage/>
-		</>
-	);
+    return (
+        <>
+            <MainPage/>
+        </>
+    );
 };
 
 export default Home;

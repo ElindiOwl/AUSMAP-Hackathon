@@ -1,11 +1,12 @@
 import { NewsList } from 'features/NewsList';
 import { NewsletterForm } from 'widgets/NewsletterForm';
-import { SectionBlock } from 'shared/ui/SectionBlock/SectionBlock';
+import { SectionBlock } from 'shared/ui';
 import { Link } from 'react-router';
 
 import style from './Main-Page.module.scss';
 
-export const MainPage = () => {
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export default function MainPage() {
 	return (
 		<div className={style.mainPage}>
 			<SectionBlock className={style.mainPage__aboutBlock}>
@@ -20,5 +21,3 @@ export const MainPage = () => {
 		</div>
 	)
 }
-
-export default MainPage;

@@ -1,14 +1,14 @@
-import type { FC, MouseEventHandler } from 'react';
-import React, { memo, useId } from 'react';
+import type { FC, MouseEventHandler, ReactNode, RefObject } from 'react';
+import { memo, useId } from 'react';
 import { cn } from 'shared/lib';
 
 import { useMenu } from '../model/useMenu';
 import { DropdownShell } from '../model/Dropdown-Shell';
 
 interface DropdownControlProps {
-    shellItems: React.ReactNode;
+    shellItems: ReactNode;
     elementToHook: HTMLElement | string;
-    children: React.ReactNode;
+    children: ReactNode;
 }
 
 interface DropdownMenuProps extends DropdownControlProps {
@@ -64,7 +64,7 @@ export const DropdownMenu: FC<DropdownMenuProps> = memo(({
 				containerStyling={shellContainerStyling}
 				isMenuOpen={isMenuOpen}
 				portalElement={elementToHook}
-				toggleRef={menuRef as React.RefObject<HTMLDivElement>}
+				toggleRef={menuRef as RefObject<HTMLDivElement>}
 			/>
 		</div>
 	);

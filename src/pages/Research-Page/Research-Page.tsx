@@ -1,13 +1,15 @@
 import { ResearchPhotosRow } from 'features/ResearchPhotosRow';
-import { SectionBlock } from 'shared/ui/SectionBlock/SectionBlock';
+import { SectionBlock } from 'shared/ui';
 
 import style from './Research-Page.module.scss';
 
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export async function loader() {
 	return {};
 }
 
-export const ResearchPage = () => {
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export default function ResearchPage() {
 	return (
 		<div className={style.researchPage}>
 			<div className={style.researchPage__researchGrid}>
@@ -22,6 +24,4 @@ export const ResearchPage = () => {
 			</SectionBlock>
 		</div>
 	);
-};
-
-export default ResearchPage;
+}

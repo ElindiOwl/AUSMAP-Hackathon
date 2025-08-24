@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Slider } from 'shared/ui/Slider';
-import { RegularButton } from 'shared/ui/Buttons/Regular-Button';
-import { ArrowSVG } from 'shared/assets/svg/Arrow-SVG';
+import { RegularButton, Slider } from 'shared/ui';
+import { ArrowSVG } from 'shared/assets';
 import { NewsCard, selectLatestNews, setNews } from 'entities/news';
 
 import styles from './NewsList.module.scss';
@@ -43,7 +42,7 @@ const mockNewsData = [
 
 export const NewsList = () => {
 	const dispatch = useDispatch();
-	const latestNews = useSelector((state) => selectLatestNews(state, 4));
+	const latestNews = useSelector((state: any) => selectLatestNews(state, 4));
 
 	useEffect(() => {
 		dispatch(setNews(mockNewsData));
@@ -63,7 +62,8 @@ export const NewsList = () => {
 			>
 				{latestNews.map((news) => (
 					<div key={news.id} className={styles.newsItem}>
-						<NewsCard news={news} onClick={() => console.log('News clicked:', news.id)}/>
+						<NewsCard news={news} onClick={() => {
+						}}/>
 					</div>
 				))}
 			</Slider>

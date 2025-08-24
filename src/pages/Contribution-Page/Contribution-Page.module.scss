@@ -1,6 +1,6 @@
 .contributionPage {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: var(--max-width-sm);
+  margin: var(--spacing-0) auto;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -8,31 +8,31 @@
 
 .contributionPage__titleBlock {
   text-align: center;
-  background: #deeff2;
-  color: #7bc2cd;
-  border-radius: 0.7rem;
-  font-size: 1.7rem;
-  font-weight: 400;
-  padding: 2rem 1rem 2.2rem 1rem;
-  margin: 1.3rem 0 1.4rem 0;
-  line-height: 1.2;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-regular);
+  padding: var(--spacing-8) var(--spacing-4);
+  margin: var(--spacing-5) var(--spacing-0) var(--spacing-6) var(--spacing-0);
+  line-height: var(--font-line-height-snug);
 }
 
 .contributionPage__optionsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0.8rem;
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+  gap: var(--spacing-2);
+  margin-top: var(--spacing-5);
+  margin-bottom: var(--spacing-5);
 }
 
 .contributionPage__volunteer {
-  background: #7cc9c6;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.2rem;
-  border-radius: 0.7rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xl);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,11 +41,11 @@
 }
 
 .contributionPage__samples {
-  background: #3482b5;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.2rem;
-  border-radius: 0.7rem;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xl);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,11 +54,11 @@
 }
 
 .contributionPage__donor {
-  background: #ee726e;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.1rem;
-  border-radius: 0.7rem;
+  background: var(--color-alternative);
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,11 +67,11 @@
 }
 
 .contributionPage__influencer {
-  background: #a8dbac;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.1rem;
-  border-radius: 0.7rem;
+  background: var(--color-alternative-dark);
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;

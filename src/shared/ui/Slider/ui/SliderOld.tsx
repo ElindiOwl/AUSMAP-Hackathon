@@ -1,7 +1,7 @@
 'use client';
 
 import type { FC, ReactNode } from 'react';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { cn } from 'shared/lib';
 
 import style from './Slider.module.scss';

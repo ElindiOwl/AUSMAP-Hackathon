@@ -1,34 +1,34 @@
 .blockItem {
   flex: 1;
-  border-radius: 0.7rem;
-  padding: 1.2rem 0.7rem;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-5) var(--spacing-3);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
 }
 
 .cyan {
-  background: #91cfcf;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .yellow {
-  background: #fde892;
-  color: #a0811e;
+  background: var(--color-alternative-light);
+  color: var(--color-black);
 }
 
 .blue {
-  background: #3783b1;
-  color: #fff;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
 }
 
 .red {
-  background: #ee726e;
-  color: #fff;
+  background: var(--color-alternative);
+  color: var(--color-white);
 }
 
 .green {
-  background: #a8dbac;
-  color: #fff;
+  background: var(--color-alternative-dark);
+  color: var(--color-white);
 }

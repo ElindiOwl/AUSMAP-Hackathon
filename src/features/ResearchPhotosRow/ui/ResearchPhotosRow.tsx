@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Slider } from 'shared/ui/Slider';
-import { RegularButton } from 'shared/ui/Buttons/Regular-Button';
-import { ArrowSVG } from 'shared/assets/svg/Arrow-SVG';
+import { RegularButton, Slider } from 'shared/ui';
+import { ArrowSVG } from 'shared/assets';
 import { ResearcherCard, setResearchers } from 'entities/researcher';
 
 import styles from './ResearchPhotosRow.module.scss';

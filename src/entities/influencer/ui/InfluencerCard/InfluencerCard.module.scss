@@ -1,61 +1,61 @@
 .card {
   display: flex;
   flex-direction: column;
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-5);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
   height: 100%;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-md);
   }
 }
 
 .imageContainer {
   position: relative;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 16px;
+  width: var(--size-avatar);
+  height: var(--size-avatar);
+  margin: var(--spacing-0) auto var(--spacing-4);
 }
 
 .image {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: var(--radius-full);
   object-fit: cover;
 }
 
 .placeholder {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: var(--radius-full);
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
+  color: var(--color-white);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
 }
 
 .verifiedBadge {
   position: absolute;
   top: -4px;
   right: -4px;
-  width: 24px;
-  height: 24px;
-  background: #10b981;
-  border: 2px solid white;
-  border-radius: 50%;
+  width: var(--size-badge);
+  height: var(--size-badge);
+  background: var(--color-alternative-dark);
+  border: var(--border-white);
+  border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
 }
 
 .content {
@@ -66,46 +66,46 @@
 }
 
 .name {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1f2937;
-  margin: 0 0 8px 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-2) var(--spacing-0);
 }
 
 .title {
-  font-size: 14px;
-  color: #6b7280;
-  margin: 0 0 12px 0;
-  font-weight: 500;
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-dark);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-3) var(--spacing-0);
+  font-weight: var(--font-weight-medium);
 }
 
 .impact {
-  font-size: 14px;
-  color: #374151;
-  line-height: 1.5;
-  margin: 0 0 16px 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  line-height: var(--font-line-height-normal);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
   flex: 1;
 }
 
 .socialLinks {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: var(--spacing-2);
   flex-wrap: wrap;
 }
 
 .socialLink {
-  padding: 6px 12px;
-  background: #f3f4f6;
-  color: #6b7280;
+  padding: var(--spacing-1) var(--spacing-3);
+  background: var(--color-gray);
+  color: var(--color-primary-dark);
   text-decoration: none;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  transition: var(--transition-fast);
 
   &:hover {
-    background: #e5e7eb;
-    color: #374151;
+    background: var(--color-primary-light);
+    color: var(--color-white);
   }
 }

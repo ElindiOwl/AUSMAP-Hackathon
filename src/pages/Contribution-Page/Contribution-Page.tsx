@@ -1,14 +1,16 @@
 import { TeamCommentsSlider } from 'features/TeamCommentsSlider';
-import { SectionBlock } from 'shared/ui/SectionBlock/SectionBlock';
+import { SectionBlock } from 'shared/ui';
 import { Link } from 'react-router';
 
 import style from './Contribution-Page.module.scss';
 
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export async function loader() {
 	return {};
 }
 
-export const ContributionPage = () => {
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
+export default function ContributionPage() {
 	return (
 		<div className={style.contributionPage}>
 			<SectionBlock className={style.contributionPage__titleBlock}>
@@ -23,4 +25,4 @@ export const ContributionPage = () => {
 			</div>
 		</div>
 	);
-};
+}
