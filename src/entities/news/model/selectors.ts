@@ -1,5 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
-import type { RootState } from 'app/store/types';
+import type { RootState } from 'app/store';
+
+import type { News } from './types';
 
 export const selectNewsItems = (state: RootState) => state.news.items;
 export const selectNewsLoading = (state: RootState) => state.news.isLoading;
@@ -12,5 +14,5 @@ export const selectLatestNews = createSelector(
 
 export const selectNewsByCategory = createSelector(
 	[selectNewsItems, (state: RootState, category: string) => category],
-	(items, category) => items.filter(news => news.category === category)
+	(items, category) => items.filter((news: News) => news.category === category)
 );

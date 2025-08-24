@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useAppDispatch, useAppSelector } from 'shared/lib';
 import { RegularButton, Slider } from 'shared/ui';
 import { ArrowSVG } from 'shared/assets';
 import { ResearcherCard, setResearchers } from 'entities/researcher';
@@ -49,9 +49,9 @@ const mockResearchersData = [
 	}
 ];
 
-const ResearchPhotosRow = () => {
-	const dispatch = useDispatch();
-	const researchers = useSelector((state: any) => state.researcher.items);
+export const ResearchPhotosRow = () => {
+	const dispatch = useAppDispatch();
+	const researchers = useAppSelector((state) => state.researcher.items);
 
 	useEffect(() => {
 		dispatch(setResearchers(mockResearchersData));
@@ -65,7 +65,7 @@ const ResearchPhotosRow = () => {
 				containerStyle={styles.slider__container}
 				sliderStyle={styles.slider__slider}
 			>
-				{researchers.map((researcher: any) => (
+				{researchers.map((researcher) => (
 					<div key={researcher.id} className={styles.researcherItem}>
 						<ResearcherCard researcher={researcher}/>
 					</div>
@@ -74,5 +74,3 @@ const ResearchPhotosRow = () => {
 		</div>
 	);
 };
-
-export default ResearchPhotosRow;

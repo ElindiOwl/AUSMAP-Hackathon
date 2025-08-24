@@ -1,1 +1,1 @@
-export { default as TeamCommentsSlider } from './ui/TeamCommentsSlider';
+export * from './ui/TeamCommentsSlider';

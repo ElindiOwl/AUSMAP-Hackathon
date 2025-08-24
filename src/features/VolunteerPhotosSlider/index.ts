@@ -1,1 +1,1 @@
-export {default as VolunteerPhotosSlider} from './ui/VolunteerPhotosSlider';
+export * from './ui/VolunteerPhotosSlider';

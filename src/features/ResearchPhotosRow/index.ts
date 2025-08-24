@@ -1,1 +1,1 @@
-export { default as ResearchPhotosRow } from './ui/ResearchPhotosRow';
+export * from './ui/ResearchPhotosRow';

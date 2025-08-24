@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useAppDispatch, useAppSelector } from 'shared/lib';
 import { RegularButton, Slider } from 'shared/ui';
 import { ArrowSVG } from 'shared/assets';
 import { setVolunteers, VolunteerCard } from 'entities/volunteer';
@@ -49,9 +49,9 @@ const mockVolunteersData = [
 	}
 ];
 
-const VolunteerPhotosSlider = () => {
-	const dispatch = useDispatch();
-	const volunteers = useSelector((state: any) => state.volunteer.items);
+export const VolunteerPhotosSlider = () => {
+	const dispatch = useAppDispatch();
+	const volunteers = useAppSelector((state) => state.volunteer.items);
 
 	useEffect(() => {
 		dispatch(setVolunteers(mockVolunteersData));
@@ -65,7 +65,7 @@ const VolunteerPhotosSlider = () => {
 				containerStyle={styles.slider__container}
 				sliderStyle={styles.slider__slider}
 			>
-				{volunteers.map((volunteer: any) => (
+				{volunteers.map((volunteer) => (
 					<div key={volunteer.id} className={styles.volunteerItem}>
 						<VolunteerCard volunteer={volunteer}/>
 					</div>
@@ -74,5 +74,3 @@ const VolunteerPhotosSlider = () => {
 		</div>
 	);
 };
-
-export default VolunteerPhotosSlider;

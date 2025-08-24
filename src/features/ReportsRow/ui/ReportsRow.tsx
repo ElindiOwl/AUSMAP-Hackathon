@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { RegularButton, Slider } from 'shared/ui';
 import { ArrowSVG } from 'shared/assets';
 import { ReportCard, setReports } from 'entities/report';
+import { useAppDispatch, useAppSelector } from 'shared/lib';
 
 import styles from './ReportsRow.module.scss';
 
@@ -60,15 +60,15 @@ const mockReportsData = [
 ];
 
 export const ReportsRow = () => {
-	const dispatch = useDispatch();
-	const reports = useSelector((state: any) => state.report.items);
+	const dispatch = useAppDispatch();
+	const reports = useAppSelector((state) => state.report.items);
 
 	useEffect(() => {
 		dispatch(setReports(mockReportsData));
 	}, [dispatch]);
 
 	const handleDownload = (reportId: string) => {
-		const report = reports.find((r: any) => r.id === reportId);
+		const report = reports.find((report) => report.id === reportId);
 		if (report) {
 			window.open(report.downloadUrl, '_blank');
 		}
@@ -86,7 +86,7 @@ export const ReportsRow = () => {
 				containerStyle={styles.reportsSlider__container}
 				sliderStyle={styles.reportsSlider__slider}
 			>
-				{reports.map((report: any) => (
+				{reports.map((report) => (
 					<div key={report.id} className={styles.reportItem}>
 						<ReportCard
 							report={report}

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useAppDispatch, useAppSelector } from 'shared/lib';
 import { RegularButton, Slider } from 'shared/ui';
 import { ArrowSVG } from 'shared/assets';
 import { InfluencerCard, setInfluencers } from 'entities/influencer';
@@ -48,8 +48,8 @@ const mockInfluencersData = [
 ];
 
 export const InfluencerInfoRow = () => {
-	const dispatch = useDispatch();
-	const influencers = useSelector((state: any) => state.influencer.items);
+	const dispatch = useAppDispatch();
+	const influencers = useAppSelector((state) => state.influencer.items);
 
 	useEffect(() => {
 		dispatch(setInfluencers(mockInfluencersData));
@@ -63,7 +63,7 @@ export const InfluencerInfoRow = () => {
 				containerStyle={styles.slider__container}
 				sliderStyle={styles.slider__slider}
 			>
-				{influencers.map((influencer: any) => (
+				{influencers.map((influencer) => (
 					<div key={influencer.id} className={styles.influencerItem}>
 						<InfluencerCard influencer={influencer}/>
 					</div>

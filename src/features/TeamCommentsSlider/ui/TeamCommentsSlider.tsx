@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useAppDispatch, useAppSelector } from 'shared/lib';
 import { RegularButton, Slider } from 'shared/ui';
 import { ArrowSVG } from 'shared/assets';
 import { setTeamComments, TeamCommentCard } from 'entities/team-comment';
@@ -36,9 +36,9 @@ const mockCommentsData = [
 	}
 ];
 
-const TeamCommentsSlider = () => {
-	const dispatch = useDispatch();
-	const comments = useSelector((state: any) => state.teamComment.items);
+export const TeamCommentsSlider = () => {
+	const dispatch = useAppDispatch();
+	const comments = useAppSelector((state) => state.teamComment.items);
 
 	useEffect(() => {
 		dispatch(setTeamComments(mockCommentsData));
@@ -56,7 +56,7 @@ const TeamCommentsSlider = () => {
 				containerStyle={styles.slider__container}
 				sliderStyle={styles.slider__slider}
 			>
-				{comments.map((comment: any) => (
+				{comments.map((comment) => (
 					<div key={comment.id} className={styles.commentItem}>
 						<TeamCommentCard comment={comment}/>
 					</div>
@@ -65,5 +65,3 @@ const TeamCommentsSlider = () => {
 		</div>
 	);
 };
-
-export default TeamCommentsSlider;
