@@ -1,4 +1,4 @@
-import React from 'react';
+import type { MouseEvent } from 'react';
 
 import type { Report } from '../../model/types';
 
@@ -10,7 +10,7 @@ interface ReportCardProps {
 }
 
 export const ReportCard = ({ report, onDownload }: ReportCardProps) => {
-	const handleDownload = (e: React.MouseEvent) => {
+	const handleDownload = (e: MouseEvent) => {
 		e.stopPropagation();
 		onDownload?.(report.id);
 	};

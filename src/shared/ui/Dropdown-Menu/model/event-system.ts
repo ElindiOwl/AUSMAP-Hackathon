@@ -1,5 +1,3 @@
-'use client';
-
 type EventCallback<T> = (data: T) => void;
 
 interface Events {

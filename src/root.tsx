@@ -1,5 +1,5 @@
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, } from 'react-router';
-import React from 'react';
+import type { ReactNode } from 'react';
 import { StoreProvider } from 'app/providers';
 
 import type { Route } from '.react-router/types/src/+types/root';
@@ -30,7 +30,7 @@ export const links: Route.LinksFunction = () => [
 ];
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
 			<head>
