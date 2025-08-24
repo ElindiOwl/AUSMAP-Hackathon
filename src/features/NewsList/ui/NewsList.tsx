@@ -38,12 +38,20 @@ const mockNewsData = [
 		id: '4',
 		publishedAt: '2023-12-20T16:00:00Z',
 		title: 'Annual Report 2023 Released'
+	},
+	{
+		author: 'AUSMAP Research Team',
+		category: 'report',
+		content: 'Our comprehensive annual report showcasing the impact and progress made in combating microplastic pollution.',
+		id: '5',
+		publishedAt: '2023-12-15T16:00:00Z',
+		title: 'Annual Report 2023 Updated'
 	}
 ];
 
 export const NewsList = () => {
 	const dispatch = useAppDispatch();
-	const latestNews = useAppSelector((state) => selectLatestNews(state, 4));
+	const latestNews = useAppSelector((state) => selectLatestNews(state, mockNewsData.length));
 
 	useEffect(() => {
 		dispatch(setNews(mockNewsData));
@@ -57,15 +65,17 @@ export const NewsList = () => {
 						<ArrowSVG/>
 					</RegularButton>
 				}
-				buttonsPosition="bottom"
+				buttonsPosition="middle"
 				containerStyle={styles.newsSlider__container}
 				sliderStyle={styles.newsSlider__slider}
 			>
 				{latestNews.map((news: News) => (
-					<div key={news.id} className={styles.newsItem}>
-						<NewsCard news={news} onClick={() => {
-						}}/>
-					</div>
+					<NewsCard
+						key={news.id}
+						news={news}
+						onClick={() => {
+						}}
+					/>
 				))}
 			</Slider>
 		</section>

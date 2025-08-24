@@ -1,3 +1,5 @@
+import { Heading, Text } from 'shared/ui';
+
 import type { News } from '../../model/types';
 
 import styles from './NewsCard.module.scss';
@@ -22,10 +24,12 @@ export const NewsCard = ({ news, onClick }: NewsCardProps) => {
 				/>
 			)}
 			<div className={styles.newsCard__content}>
-				<h3 className={styles.newsCard__title}>{news.title}</h3>
-				<p className={styles.newsCard__excerpt}>
+				<Heading className={styles.newsCard__title} level="h3">
+					{news.title}
+				</Heading>
+				<Text className={styles.newsCard__excerpt}>
 					{news.content.substring(0, 100)}...
-				</p>
+				</Text>
 				<div className={styles.newsCard__meta}>
 					<time className={styles.newsCard__date}>
 						{new Date(news.publishedAt).toLocaleDateString()}

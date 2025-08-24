@@ -1,4 +1,5 @@
 import type { MouseEvent } from 'react';
+import { Heading, Text } from 'shared/ui';
 
 import type { Report } from '../../model/types';
 
@@ -18,17 +19,17 @@ export const ReportCard = ({ report, onDownload }: ReportCardProps) => {
 	return (
 		<article className={styles.reportCard}>
 			<div className={styles.reportCard__header}>
-				<h3 className={styles.reportCard__title}>
+				<Heading className={styles.reportCard__title} level="h3">
                     AUSMAP Report №{report.reportNumber}
-				</h3>
+				</Heading>
 				<span className={styles.reportCard__category}>
 					{report.category}
 				</span>
 			</div>
-
+ 
 			<div className={styles.reportCard__content}>
-				<h4 className={styles.reportCard__subtitle}>{report.title}</h4>
-				<p className={styles.reportCard__summary}>{report.summary}</p>
+				<Heading className={styles.reportCard__subtitle} level="h4">{report.title}</Heading>
+				<Text className={styles.reportCard__summary}>{report.summary}</Text>
 
 				<div className={styles.reportCard__meta}>
 					<time className={styles.reportCard__date}>

@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import { Heading, Text } from 'shared/ui';
 
 import type { Influencer } from '../../model/types';
 
@@ -29,9 +30,15 @@ export const InfluencerCard: FC<InfluencerCardProps> = ({ influencer }) => {
 			</div>
 
 			<div className={styles.content}>
-				<h3 className={styles.name}>{influencer.name}</h3>
-				<p className={styles.title}>{influencer.title}</p>
-				<p className={styles.impact}>{influencer.impact}</p>
+				<Heading className={styles.name} level="h3">
+					{influencer.name}
+				</Heading>
+				<Text className={styles.title}>
+					{influencer.title}
+				</Text>
+				<Text className={styles.impact}>
+					{influencer.impact}
+				</Text>
 
 				<div className={styles.socialLinks}>
 					{influencer.socialLinks.twitter && (

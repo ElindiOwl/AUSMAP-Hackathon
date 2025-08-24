@@ -1,3 +1,5 @@
+import { Heading, Text } from 'shared/ui';
+
 import type { TeamComment } from '../../model/types';
 
 import styles from './TeamCommentCard.module.scss';
@@ -18,11 +20,15 @@ export const TeamCommentCard = ({ comment, onClick }: TeamCommentCardProps) => (
 				/>
 			)}
 			<div className={styles.commentCard__authorInfo}>
-				<h4 className={styles.commentCard__author}>{comment.author}</h4>
+				<Heading className={styles.commentCard__author} level="h4">
+					{comment.author}
+				</Heading>
 				<span className={styles.commentCard__role}>{comment.role}</span>
 			</div>
 		</div>
-		<p className={styles.commentCard__text}>{comment.comment}</p>
+		<Text className={styles.commentCard__text}>
+			{comment.comment}
+		</Text>
 		<div className={styles.commentCard__meta}>
 			<time className={styles.commentCard__date}>
 				{new Date(comment.createdAt).toLocaleDateString()}

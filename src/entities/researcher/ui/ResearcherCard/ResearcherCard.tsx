@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import { Heading, Text } from 'shared/ui';
 
 import type { Researcher } from '../../model/types';
 
@@ -29,12 +30,20 @@ export const ResearcherCard: FC<ResearcherCardProps> = ({ researcher }) => {
 			</div>
 
 			<div className={styles.content}>
-				<h3 className={styles.name}>{researcher.name}</h3>
-				<p className={styles.specialization}>{researcher.specialization}</p>
+				<Heading className={styles.name} level="h3">
+					{researcher.name}
+				</Heading>
+				<Text className={styles.specialization}>
+					{researcher.specialization}
+				</Text>
 				{researcher.institution && (
-					<p className={styles.institution}>{researcher.institution}</p>
+					<Text className={styles.institution}>
+						{researcher.institution}
+					</Text>
 				)}
-				<p className={styles.contribution}>{researcher.contribution}</p>
+				<Text className={styles.contribution}>
+					{researcher.contribution}
+				</Text>
 
 				<div className={styles.stats}>
 					<div className={styles.stat}>

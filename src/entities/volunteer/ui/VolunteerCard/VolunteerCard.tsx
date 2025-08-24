@@ -1,3 +1,5 @@
+import { Heading, Text } from 'shared/ui';
+
 import type { Volunteer } from '../../model/types';
 
 import styles from './VolunteerCard.module.scss';
@@ -17,9 +19,15 @@ export const VolunteerCard = ({ volunteer, onClick }: VolunteerCardProps) => (
 			/>
 		)}
 		<div className={styles.volunteerCard__content}>
-			<h3 className={styles.volunteerCard__name}>{volunteer.name}</h3>
-			<p className={styles.volunteerCard__role}>{volunteer.role}</p>
-			<p className={styles.volunteerCard__contribution}>{volunteer.contribution}</p>
+			<Heading className={styles.volunteerCard__name} level="h3">
+				{volunteer.name}
+			</Heading>
+			<Text className={styles.volunteerCard__role}>
+				{volunteer.role}
+			</Text>
+			<Text className={styles.volunteerCard__contribution}>
+				{volunteer.contribution}
+			</Text>
 			<div className={styles.volunteerCard__meta}>
 				<span className={styles.volunteerCard__location}>{volunteer.location}</span>
 				<time className={styles.volunteerCard__joined}>
