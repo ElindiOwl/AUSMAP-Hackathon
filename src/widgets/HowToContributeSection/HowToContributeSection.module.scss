@@ -1,0 +1,102 @@
+.howToContribute {
+  border-radius: var(--radius-lg);
+}
+
+.howToContribute__overlay {
+  background-color: var(--color-primary-light);
+  opacity: 0.6;
+}
+
+.howToContribute__content {
+  padding: var(--spacing-8) var(--spacing-6);
+  height: 40vh;
+}
+
+.howToContribute__title {
+  color: var(--color-white);
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--spacing-6) 0;
+  text-align: center;
+  text-shadow: var(--text-shadow-default);
+}
+
+.howToContribute__highlight {
+  color: var(--color-primary);
+  text-shadow: none;
+}
+
+.howToContribute__darkHighlight {
+  color: var(--color-primary-dark);
+  text-shadow: none;
+}
+
+.howToContribute__altHighlight {
+  color: color-mix(in srgb, var(--color-alternative) 85%, white 20%);
+  text-shadow: none;
+}
+
+.howToContribute__waysGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-4);
+}
+
+.howToContribute__wayCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 25vh;
+  gap: var(--spacing-3);
+  background: var(--color-primary);
+  opacity: 0.8;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.howToContribute__wayCard:hover {
+  filter: brightness(1.05);
+  transform: translateY(-2px);
+}
+
+.howToContribute__wayTitle {
+  color: var(--color-white);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  text-shadow: var(--text-shadow-default);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.howToContribute__wayText {
+  color: var(--color-white);
+  text-shadow: var(--text-shadow-default);
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  text-align: justify;
+  text-indent: 2em;
+  margin: auto 0;
+}
+
+@media (max-width: 1200px) {
+  .howToContribute__waysGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .howToContribute__content {
+    padding: var(--spacing-6) var(--spacing-4);
+  }
+  .howToContribute__title {
+    font-size: var(--font-size-4xl);
+  }
+  .howToContribute__waysGrid {
+    grid-template-columns: 1fr;
+  }
+}

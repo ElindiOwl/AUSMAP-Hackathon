@@ -8,4 +8,7 @@ export { default as forest } from './forest.avif';
 export { default as peopleWalk } from './peopleWalk.avif';
 export { default as peopleCheck } from './peopleCheck.avif';
 export { default as peopleTalk } from './peopleTalk.avif';
-export { default as TIS } from './TIS.avif'; 
+export { default as TIS } from './TIS.avif';
+export { default as waterstains } from './waterstains.avif';
+export { default as waterbubbles } from './waterbubbles.avif';
+export { default as horizon } from './horizon.avif';

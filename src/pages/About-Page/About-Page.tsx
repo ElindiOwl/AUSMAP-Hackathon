@@ -1,11 +1,11 @@
 import styles from './About-Page.module.scss';
 
 import {
-	ContributionSection,
 	DetailSections,
-	Footer,
+	HowToContributeSection,
 	MissionSection,
 	ProjectLeadersSection,
+	TeamPartnersTestimonialsSection,
 	VisionSection,
 	WhatIsAusmapSection
 } from '@/widgets';
@@ -16,7 +16,7 @@ export async function loader() {
 	return {};
 }
 
-// eslint-disable-next-line prefer-arrow/prefer-arrow-functions 
+// eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export default function AboutPage() {
 	return (
 		<div className={styles.aboutPage}>
@@ -26,9 +26,9 @@ export default function AboutPage() {
 				<VisionSection/>
 				<MissionSection/>
 			</div>
+			<TeamPartnersTestimonialsSection/>
 			<ProjectLeadersSection/>
-			<ContributionSection/>
-			<Footer/>
+			<HowToContributeSection/>
 		</div>
 	);
 }
