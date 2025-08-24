@@ -7,11 +7,11 @@
   box-shadow: var(--shadow-sm);
   transition: var(--transition-fast);
   height: 100%;
+}
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-  }
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .imageContainer {
@@ -103,9 +103,9 @@
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
   transition: var(--transition-fast);
+}
 
-  &:hover {
-    background: var(--color-primary-light);
-    color: var(--color-white);
-  }
+.socialLink:hover {
+  background: var(--color-primary-light);
+  color: var(--color-white);
 }

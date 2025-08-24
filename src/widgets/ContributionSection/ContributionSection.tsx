@@ -1,27 +1,32 @@
-import { Heading, RegularButton, SectionBlock, Text } from 'shared/ui';
+import { BackgroundSection, Heading, RegularButton, Text } from 'shared/ui';
 import { Link } from 'react-router';
 import { water } from 'shared/assets';
 
-import styles from './ContributionSection.module.scss';
+import style from './ContributionSection.module.scss';
 
 export const ContributionSection = () => {
 	return (
-		<SectionBlock className={styles.contributionSection} style={{ backgroundImage: `url(${water})` }}>
-			<Heading className={styles.contributionSection__title} level="h2">
+		<BackgroundSection
+			backgroundImage={water}
+			childrenContainerClassName={style.contributionSection__content}
+			containerClassName={style.contributionSection}
+			overlayClassName={style.contributionSection__overlay}
+		>
+			<Heading className={style.contributionSection__title} level="h2">
                 you can make a difference!
 			</Heading>
-			<Text className={styles.contributionSection__text}>
+			<Text className={style.contributionSection__text}>
                 Join our sample teams, train as an educator, help us build the network that will save our
                 aquatic ecosystems from microplastic pollution or donate!
 			</Text>
 			<Link to="/contribution">
 				<RegularButton
-					buttonStyle={styles.contributionSection__button}
+					buttonStyle={style.contributionSection__button}
 					type="button"
 				>
                     JOIN US!
 				</RegularButton>
 			</Link>
-		</SectionBlock>
+		</BackgroundSection>
 	);
 };

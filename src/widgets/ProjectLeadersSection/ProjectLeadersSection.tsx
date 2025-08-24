@@ -1,13 +1,15 @@
-import { Heading, SectionBlock, Text } from 'shared/ui';
+import { BackgroundSection, Heading, Text } from 'shared/ui';
 import { forest, TIS } from 'shared/assets';
 
 import styles from './ProjectLeadersSection.module.scss';
 
 export const ProjectLeadersSection = () => {
 	return (
-		<SectionBlock
-			className={styles.projectLeadersSection}
-			style={{ backgroundImage: `url(${forest})` }}
+		<BackgroundSection
+			backgroundImage={forest}
+			childrenContainerClassName={styles.projectLeadersSection__children}
+			containerClassName={styles.projectLeadersSection}
+			overlayClassName={styles.projectLeadersSection__overlay}
 		>
 			<div className={styles.projectLeadersSection__header}>
 				<Heading className={styles.projectLeadersSection__title} level="h2">
@@ -32,6 +34,6 @@ export const ProjectLeadersSection = () => {
 					src={TIS}
 				/>
 			</div>
-		</SectionBlock>
+		</BackgroundSection>
 	);
 };

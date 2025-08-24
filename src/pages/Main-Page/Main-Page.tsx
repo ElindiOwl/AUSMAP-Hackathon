@@ -10,14 +10,15 @@ import {
 	NewsletterSection,
 	PlasticProblemSection
 } from '@/widgets';
-
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export default function MainPage() {
 	return (
 		<div className={style.mainPage}>
 			<BackgroundSection
 				backgroundImage={turtle}
-				className={style.mainPage__heroBlock}
+				childrenContainerClassName={style.mainPage__heroBlock_content}
+				containerClassName={style.mainPage__heroBlock}
+				overlayClassName={style.mainPage__heroBlock_overlay}
 			>
 				<HeroSection/>
 				<MainMissionSection/>

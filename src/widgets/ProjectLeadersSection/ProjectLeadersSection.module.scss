@@ -1,58 +1,68 @@
 .projectLeadersSection {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: var(--spacing-16);
   border-radius: var(--radius-lg);
-  min-height: 400px;
+}
+
+.projectLeadersSection__overlay {
+  background-color: var(--color-alternative-dark);
+  opacity: 0.5;
+}
+
+.projectLeadersSection__children {
+  padding: var(--spacing-16);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-image: linear-gradient(to bottom, var(--color-forest), var(--color-forest-dark));
+  height: 60vh;
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color-alternative-dark);
-    opacity: 0.5;
-    z-index: 1;
-    border-radius: inherit;
-  }
+.projectLeadersSection__header {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+  margin-bottom: var(--spacing-8);
+}
 
-  &__header {
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-4);
-    margin-bottom: var(--spacing-8);
-  }
+.projectLeadersSection__title {
+  color: var(--color-white);
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-  &__title {
-    // Add styles from about page here
-  }
+.projectLeadersSection__subtitle {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
 
-  &__subtitle {
-    // Add styles from about page here
-  }
+.projectLeadersSection__content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-12);
+}
 
-  &__content {
-    // Add styles from about page here
-  }
-
-  &__text {
-    // Add styles from about page here
-  }
-
-  &__logo {
-    // Add styles from about page here
-  }
+.projectLeadersSection__text {
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-line-height-normal);
+  text-shadow: var(--text-shadow-default);
+  margin: 0;
+  text-align: justify;
+  text-indent: 2em;
+  width: 300px;
 }

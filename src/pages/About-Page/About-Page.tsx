@@ -1,6 +1,14 @@
 import styles from './About-Page.module.scss';
 
-import { DetailSections, MissionSection, ProjectLeadersSection, VisionSection, WhatIsAusmapSection } from '@/widgets';
+import {
+	ContributionSection,
+	DetailSections,
+	Footer,
+	MissionSection,
+	ProjectLeadersSection,
+	VisionSection,
+	WhatIsAusmapSection
+} from '@/widgets';
 
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
@@ -13,15 +21,14 @@ export default function AboutPage() {
 	return (
 		<div className={styles.aboutPage}>
 			<WhatIsAusmapSection/>
-
 			<DetailSections/>
-
 			<div className={styles.aboutPage__visionMissionBlock}>
 				<VisionSection/>
 				<MissionSection/>
 			</div>
-
 			<ProjectLeadersSection/>
+			<ContributionSection/>
+			<Footer/>
 		</div>
 	);
 }

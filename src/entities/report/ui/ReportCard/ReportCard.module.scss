@@ -7,11 +7,11 @@
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(238, 114, 110, 0.3);
-  }
+.reportCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(238, 114, 110, 0.3);
 }
 
 .reportCard__header {
@@ -66,8 +66,8 @@
   font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.2s ease;
+}
 
-  &:hover {
-    background: rgba(255, 255, 255, 0.3);
-  }
+.reportCard__downloadBtn:hover {
+  background: rgba(255, 255, 255, 0.3);
 }

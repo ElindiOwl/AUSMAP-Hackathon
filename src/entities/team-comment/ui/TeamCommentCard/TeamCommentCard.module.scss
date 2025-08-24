@@ -6,11 +6,11 @@
   padding: 1.2rem 0.7rem;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  &:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 3px 8px rgba(123, 194, 205, 0.2);
-  }
+.commentCard:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(123, 194, 205, 0.2);
 }
 
 .commentCard__header {
