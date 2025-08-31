@@ -1,0 +1,39 @@
+.dataSetMap {
+  border-radius: var(--radius-lg);
+}
+
+.dataSetMap__overlay {
+  background-color: var(--color-alternative-dark-light);
+  opacity: 0.7;
+}
+
+.dataSetMap__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-10);
+  min-height: 40vh;
+}
+
+.dataSetMap__title {
+  color: var(--color-white);
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  text-shadow: var(--text-shadow-thick);
+}
+
+.dataSetMap__text {
+  color: var(--color-white);
+  max-width: 800px;
+  margin: 0;
+  text-shadow: var(--text-shadow-default);
+}
+
+.dataSetMap__button {
+  background-color: var(--color-white);
+  color: var(--color-primary-dark);
+}

@@ -1,39 +1,42 @@
 .problemPage {
-  max-width: 500px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  padding: var(--spacing-8) var(--spacing-4);
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  gap: var(--spacing-8);
 }
 
 .problemPage__problemHeader {
-  display: flex;
+  display: grid;
+  grid-template-columns: 180px 1fr;
   width: 100%;
-  margin: 1.5rem 0 1rem 0;
+  margin: var(--spacing-4) 0;
+  gap: var(--spacing-2);
 }
 
 .problemPage__problemLabel {
-  background: #267bb1;
-  color: white;
-  font-size: 1rem;
-  padding: 2.1rem 1.2rem;
-  border-radius: 0.8rem 0 0 0.8rem;
-  flex: 0 0 170px;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  font-size: var(--font-size-xl);
+  padding: var(--spacing-6) var(--spacing-3);
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .problemPage__resultsLabel {
-  background: #dbf3f6;
-  color: #3891AD;
-  font-size: 1.1rem;
-  flex: 1 1 auto;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-size: var(--font-size-xl);
   display: flex;
   align-items: center;
-  border-radius: 0 0.8rem 0.8rem 0;
-  padding: 2.1rem 1rem;
-  font-weight: 500;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  padding: var(--spacing-6) var(--spacing-3);
+  font-weight: var(--font-weight-semibold);
 }
 
 .problemPage__dataSetMap {

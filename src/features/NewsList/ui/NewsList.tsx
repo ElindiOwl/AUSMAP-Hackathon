@@ -1,7 +1,15 @@
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from 'shared/lib';
 import { Heading, RegularButton, Slider } from 'shared/ui';
-import { ArrowSVG } from 'shared/assets';
+import {
+	ArrowSVG,
+	AwesomePlastic,
+	ManlyCove,
+	MappingMicroplastics,
+	WorstMicroplastic,
+	howStudentsCanHelp,
+	whatsNewInTheWorld
+} from 'shared/assets';
 import type { News } from 'entities/news';
 import { NewsCard, selectLatestNews, setNews } from 'entities/news';
 
@@ -9,43 +17,58 @@ import style from './NewsList.module.scss';
 
 const mockNewsData = [
 	{
-		author: 'Dr. Sarah Johnson',
-		category: 'research',
-		content: 'AUSMAP researchers have published groundbreaking findings on microplastic distribution in Australian waters.',
-		id: '1',
-		publishedAt: '2024-01-15T10:00:00Z',
-		title: 'New Microplastic Research Published'
+		author: 'AUSMAP',
+		category: 'education',
+		content: 'Students are stepping up to fight plastic pollution with AUSMAP. Learn how education and citizen science are driving change across Australia.',
+		id: 'students-next-wave',
+		imageUrl: howStudentsCanHelp,
+		publishedAt: '2025-08-06T10:00:00Z',
+		title: 'How students can help tackle plastic pollution - Next Wave'
 	},
 	{
-		author: 'AUSMAP Team',
+		author: 'AUSMAP',
+		category: 'updates',
+		content: 'Dive into our latest updates: projects, partnerships, training days, and highlights from the AUSMAP community.',
+		id: 'whats-new-world',
+		imageUrl: whatsNewInTheWorld,
+		publishedAt: '2025-06-26T09:00:00Z',
+		title: 'What’s new in the world of AUSMAP?'
+	},
+	{
+		author: 'AUSMAP',
 		category: 'community',
-		content: 'Join our growing network of citizen scientists helping to map plastic pollution across Australia.',
-		id: '2',
-		publishedAt: '2024-01-10T14:30:00Z',
-		title: 'Community Volunteer Program Launch'
+		content: 'Wrapping up our Coastcare Grant in Mornington with hands-on science and community engagement along Victoria’s coast.',
+		id: 'mapping-microplastics-mornington',
+		imageUrl: MappingMicroplastics,
+		publishedAt: '2025-06-02T09:00:00Z',
+		title: 'Mapping Microplastics Along Victoria’s Coast: AUSMAP Wraps Up…'
 	},
 	{
-		category: 'partnership',
-		content: 'AUSMAP announces new collaborations with leading Australian universities to expand research capabilities.',
-		id: '3',
-		publishedAt: '2024-01-05T09:15:00Z',
-		title: 'Partnership with Local Universities'
+		author: 'AUSMAP',
+		category: 'fieldwork',
+		content: 'Sampling day at Manly Cove reveals microplastic fragments and fibres — here’s what we found and why it matters.',
+		id: 'manly-cove-swimming',
+		imageUrl: ManlyCove,
+		publishedAt: '2024-12-16T10:00:00Z',
+		title: 'Manly Cove: Swimming in Microplastics?'
 	},
 	{
-		author: 'AUSMAP Research Team',
-		category: 'report',
-		content: 'Our comprehensive annual report showcasing the impact and progress made in combating microplastic pollution.',
-		id: '4',
-		publishedAt: '2023-12-20T16:00:00Z',
-		title: 'Annual Report 2023 Released'
+		author: 'AUSMAP',
+		category: 'research',
+		content: 'New analysis shows the worst microplastic pollution hotspot in Australia may be in Adelaide — findings and context inside.',
+		id: 'worst-microplastic-adelaide',
+		imageUrl: WorstMicroplastic,
+		publishedAt: '2024-08-09T09:00:00Z',
+		title: 'Worst Microplastic Pollution in Australia is in Adelaide'
 	},
 	{
-		author: 'AUSMAP Research Team',
-		category: 'report',
-		content: 'Our comprehensive annual report showcasing the impact and progress made in combating microplastic pollution.',
-		id: '5',
-		publishedAt: '2023-12-15T16:00:00Z',
-		title: 'Annual Report 2023 Updated'
+		author: 'AUSMAP',
+		category: 'lifestyle',
+		content: 'Reduce waste this holiday season with these plastic-free ideas curated by AUSMAP.',
+		id: '13-awesome-plastic-free-christmas-ideas',
+		imageUrl: AwesomePlastic,
+		publishedAt: '2023-11-28T10:00:00Z',
+		title: '13 Awesome PLASTIC-FREE CHRISTMAS Ideas'
 	}
 ];
 

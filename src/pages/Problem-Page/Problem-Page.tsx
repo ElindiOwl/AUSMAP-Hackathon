@@ -1,7 +1,8 @@
-import { ReportsRow } from 'features/ReportsRow';
-import { SectionBlock } from 'shared/ui';
-
 import styles from './Problem-Page.module.scss';
+
+import { ReportsRow } from 'features/ReportsRow';
+
+import {DataSetMapSection, HelpSolveSection, TopicsSection} from '@/widgets';
 
 // eslint-disable-next-line prefer-arrow/prefer-arrow-functions
 export async function loader() {
@@ -17,15 +18,9 @@ export default function ProblemPage() {
 				<div className={styles.problemPage__resultsLabel}>AUSMAP's microplastic Results</div>
 			</div>
 			<ReportsRow/>
-			<SectionBlock className={styles.problemPage__dataSetMap}>
-                Data set map
-			</SectionBlock>
-			<SectionBlock className={styles.problemPage__helpInfo}>
-                Short information about how people can help solve the problem
-			</SectionBlock>
-			<SectionBlock className={styles.problemPage__topics}>
-                Rubber Crumb and other topics about microplastic
-			</SectionBlock>
+            <DataSetMapSection/>
+            <HelpSolveSection/>
+            <TopicsSection/>
 		</div>
 	);
 }
